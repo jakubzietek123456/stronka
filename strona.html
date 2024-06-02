@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi Hydrauliczne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Usługi Hydrauliczne</h1>
+        <nav>
+            <ul>
+                <li><a href="#uslugi">Usługi</a></li>
+                <li><a href="#o-nas">O nas</a></li>
+                <li><a href="#kalkulator">Kalkulator</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        <h2>Profesjonalne usługi hydrauliczne</h2>
+        <p>Zapewniamy szybkie i niezawodne rozwiązania dla Twojego domu i biura.</p>
+    </div>
+</section>
+
+<section id="uslugi">
+    <div class="container">
+        <h2>Nasze Usługi</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Naprawa rur</h3>
+                <p>Profesjonalna naprawa uszkodzonych rur i instalacji wodnych. Ceny zaczynają się od 100 PLN za godzinę pracy plus koszt materiałów.</p>
+            </div>
+            <div class="service">
+                <h3>Montaż armatury</h3>
+                <p>Instalacja i wymiana umywalek, zlewów, toalet i innych urządzeń. Ceny zaczynają się od 150 PLN za instalację plus koszt materiałów.</p>
+            </div>
+            <div class="service">
+                <h3>Usługi kanalizacyjne</h3>
+                <p>Oczyszczanie i naprawa systemów kanalizacyjnych. Ceny zaczynają się od 200 PLN za usługę plus koszt materiałów.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="o-nas">
+    <div class="container">
+        <h2>O nas</h2>
+        <p>Jesteśmy doświadczonym zespołem hydraulików, oferującym kompleksowe usługi hydrauliczne. Naszym celem jest zapewnienie najwyższej jakości usług oraz pełnej satysfakcji klienta. Pracujemy szybko i efektywnie, dbając o każdy detal.</p>
+        <p>Nasze atuty:</p>
+        <ul>
+            <li>Wieloletnie doświadczenie</li>
+            <li>Konkurencyjne ceny</li>
+            <li>Gwarancja jakości</li>
+            <li>24/7 awaryjne usługi hydrauliczne</li>
+        </ul>
+    </div>
+</section>
+
+<section id="kalkulator">
+    <div class="container">
+        <h2>Kalkulator Usług</h2>
+        <form id="calcForm">
+            <label for="serviceType">Wybierz usługę:</label>
+            <select id="serviceType" name="serviceType">
+                <option value="repair">Naprawa rur</option>
+                <option value="installation">Montaż armatury</option>
+                <option value="sewage">Usługi kanalizacyjne</option>
+            </select>
+
+            <label for="materialCost">Koszt materiałów (PLN):</label>
+            <input type="number" id="materialCost" name="materialCost" required>
+
+            <label for="laborHours">Liczba godzin pracy:</label>
+            <input type="number" id="laborHours" name="laborHours" required>
+
+            <button type="button" onclick="calculateCost()">Policz</button>
+        </form>
+        <p id="totalCost">Całkowity koszt: <span>0 PLN</span></p>
+    </div>
+</section>
+
+<section id="kontakt">
+    <div class="container">
+        <h2>Kontakt</h2>
+        <p>Skontaktuj się z nami, aby uzyskać wycenę lub umówić wizytę.</p>
+        <form action="#" method="post">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Usługi Hydrauliczne. Wszelkie prawa zastrzeżone.</p>
+    </div>
+</footer>
+
+<script src="javascript.js"></script>
+</body>
+</html>

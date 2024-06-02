@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#hero {
+    background: url('hydraulic-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+#uslugi, #o-nas, #kalkulator, #kontakt {
+    padding: 50px 20px;
+}
+
+#uslugi h2, #o-nas h2, #kalkulator h2, #kontakt h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #007BFF;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+#kalkulator form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#kalkulator form label {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#kalkulator form input, #kalkulator form select, #kalkulator form button {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+#kalkulator form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#kalkulator form button:hover {
+    background-color: #0056b3;
+}
+
+#totalCost {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
